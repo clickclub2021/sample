@@ -1,1 +1,1 @@
-web: gunicorn click.wsgi:application
+web: gunicorn click.wsgi
