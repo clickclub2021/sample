@@ -23,9 +23,9 @@
         <li class="nav-item">
           <a class="nav-link {% block homeactive %}{% endblock homeactive %}" aria-current="page" href="/">Home</a>
         </li>
-        <li class="nav-item">
+        {% comment %} <li class="nav-item">
           <a class="nav-link {% block aboutactive %}{% endblock aboutactive %}" href="/about">About Us</a>
-        </li>
+        </li> {% endcomment %}
         {% comment %} {% if user.is_authenticated %} {% endcomment %}
         {% comment %} <li class="nav-item ">
           <a class="nav-link {% block postactive %}{% endblock postactive %}" href="/post">Post</a>
