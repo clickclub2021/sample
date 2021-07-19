@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>{% block title %}{% endblock title %} | Joy of Giving</title>
+    <title>{% block title %}{% endblock title %} | Click Club</title>
     <style>{% block css %}{% endblock css %}</style>
   </head>
   <body style="background-color:#f7f7f7">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Joy of Giving</a>
+    <a class="navbar-brand" href="/">Click Club</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,9 +27,9 @@
           <a class="nav-link {% block aboutactive %}{% endblock aboutactive %}" href="/about">About Us</a>
         </li>
         {% comment %} {% if user.is_authenticated %} {% endcomment %}
-        <li class="nav-item ">
+        {% comment %} <li class="nav-item ">
           <a class="nav-link {% block postactive %}{% endblock postactive %}" href="/post">Post</a>
-        </li>
+        </li> {% endcomment %}
         <li class="nav-item ">
           <a class="nav-link {% block addactive %}{% endblock addactive %}" href="/addQuestion">Add Question</a>
         </li>
